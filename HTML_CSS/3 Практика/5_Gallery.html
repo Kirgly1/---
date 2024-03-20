@@ -5,23 +5,34 @@
             Галлерея
         </title>
     </head>
-    <style> 
-        body { 
-            margin-left: 10%; 
-            margin-right: 10%; 
-        } 
-        .gallery { 
-            place-items: center; 
-            list-style-type: none; 
-            display: grid; 
-            grid-template-columns: 1fr 1fr 1fr; 
-        } 
-        .gallery img { 
-            border: 0.4rem black solid; 
-            padding: 10px; 
-            max-height: 300px; 
-        } 
-    </style> 
+    <style>
+        .gallery {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .gallery li {
+            flex-basis: 33%;
+            box-sizing: border-box;
+            padding:40px;
+        }
+
+        .gallery li img {
+            padding: 2%;
+            border: 0.4rem solid black;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        body{
+            margin:auto;
+            width:70%;
+        }
+
+    </style>
+
 
     <body>
         <ul class="gallery"> 
