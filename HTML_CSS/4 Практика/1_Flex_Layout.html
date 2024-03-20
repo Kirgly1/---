@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>
+            Гибкий Макет
+        </title>
+    </head>
+    <style> 
+        body {
+            display: flex;
+            flex-direction: column;
+            background: rgb(211, 211, 211);
+        }
+    
+        main, aside, header, footer {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 10);
+            text-align: left;
+            border-radius: 10px;
+        }
+        main {
+            width:70%;
+        }
+        aside {
+            width:30%;
+        }
+        .mainaside {
+            display: flex;
+            height:300px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+    
+        header {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            height: 80px;
+        }
+    
+        footer {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            height: 40px;
+        }
+    </style>
+    
+    
+    <body>
+        <header>
+            HEADER
+        </header>
+        <div class="mainaside">
+            <main>
+                MAIN
+            </main>
+            <aside>
+                ASIDE
+            </aside>
+        </div>
+        <footer>
+            FOOTER
+        </footer>
+    </body>
+</html>
