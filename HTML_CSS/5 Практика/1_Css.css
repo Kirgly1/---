@@ -1,0 +1,46 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+.section { 
+    width: 100%; 
+    margin: 10px 30px; 
+    text-align: left; 
+} 
+ 
+.section span::after { 
+    color: green; 
+} 
+ 
+.section:nth-child(1) span::after { 
+    content: "Viewport width is larger than 600px"; 
+} 
+ 
+.section:nth-child(2) span::after { 
+    content: "Viewport height is larger than 600px"; 
+} 
+ 
+.section:nth-child(3) span::after { 
+    content: "Aspect Ratio is larger than 8/5"; 
+} 
+ 
+@media (max-width: 600px) { 
+    .section:nth-child(1) span::after { 
+        content: none; 
+    } 
+} 
+ 
+@media (max-height: 600px) { 
+    .section:nth-child(2) span::after { 
+        content: none; 
+    } 
+} 
+ 
+@media (max-aspect-ratio: 8/5) { 
+    .section:nth-child(3) span::after { 
+        content: none; 
+    } 
+} 
