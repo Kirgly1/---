@@ -1,0 +1,43 @@
+.main {
+    height: 100%;
+    padding: 1rem;
+    border: dashed 0.1rem #006b09;
+    border-radius: 15px;
+    box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+    overflow-y: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-header {
+    color: black;
+    border-bottom: 4px solid #07b148;
+    padding-bottom: 0.5rem;
+  }
+  
+  .post {
+    border: dashed 0.1rem #006b09;
+    border-radius: 15px;
+    box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .delete-button {
+    background-color: #cf3a15;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  
+  .archive-button {
+    background-color: #A3AE9E;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,91 @@
+.form-container {
+    border: dashed 0.1rem #006b09;
+    border-radius: 15px;
+    box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .post-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .form-header {
+    color: black;
+    border-bottom: 4px solid #07b148;
+    padding-bottom: 0.5rem;
+  }
+  
+  label {
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #40493B;
+    border-radius: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #006b09;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border: none;
+    border: 2px solid #40493B;
+    border-radius: 4px;
+    background-color: transparent;
+    resize: vertical;
+    height: 4rem;
+    box-sizing: border-box;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #006b09;
+  }
+  
+  .create-button {
+    background-color: #006b09;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 30%;
+  }
+  
+  .create-button:focus {
+    background-color: #07b148;
+  }
+  
+  .archive {
+    margin-top: 2rem;
+  }
+  
+  .archive-header {
+    color: black;
+    border-bottom: 4px solid #07b148;
+    padding-bottom: 0.5rem;
+  }
+  
+  .text {
+    text-align: left;
+  }
+  
